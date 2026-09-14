@@ -1,0 +1,92 @@
+/* General Page */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    margin-top: 10%;
+    background: #f2f4f8;
+
+    
+}
+
+
+/* Quote Card */
+.quote-card {
+    width: 80%;
+    max-width: 600px;
+    min-width: 280px;
+    min-height: 300px;
+    margin: auto;
+
+    padding: 40px 30px;
+    box-sizing: border-box;
+
+    background: white;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Small Title */
+.label {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    color: #6c63ff;
+}
+
+
+/* Quote */
+blockquote {
+    margin: 0;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    line-height: 1.6;
+    word-spacing: 3px;
+
+    color: #222;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Author */
+.author {
+    margin-top: 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #555;
+}
+
+
+/* Link */
+.more-quotes {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    font-size: 14px;
+
+    color: #6c63ff;
+
+    text-decoration: none;
+}
+
+.more-quotes:hover {
+    text-decoration: underline;
+}
