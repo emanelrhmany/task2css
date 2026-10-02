@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 20, 80, 0.95),
+            rgba(60, 30, 120, 0.9)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    padding-top: 70px;
+
+    color: white;
+}
+
+.badge {
+    display: inline-block;
+
+    font-size: 12px;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.hero h1 {
+    margin: 15px 0;
+
+    font-size: 30px;
+}
+
+.hero h1 span {
+    color: #8b7cff;
+}
+
+.hero p {
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.hero button {
+    border: none;
+
+    padding: 10px 25px;
+
+    background: #7055e8;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* =========================
+   CIRCLES USING PSEUDO ELEMENTS
+========================= */
+
+.hero {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 20, 80, 0.95),
+            rgba(60, 30, 120, 0.9)
+        );
+}
+
+
+/* الدائرة الأولى + دوائر إضافية */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    top: -35px;
+    left: -30px;
+
+    border-radius: 50%;
+
+    background: rgba(55, 170, 220, 0.25);
+
+    box-shadow:
+        250px 40px 0 0 rgba(55, 170, 220, 0.20),
+        420px 180px 0 0 rgba(55, 170, 220, 0.15);
+}
+
+
+/* الدائرة الثانية */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 157px;
+    top: 0px;
+    right: 5px;
+    border-radius: 50%;
+    background: rgba(139, 124, 255, 0.25);
+    box-shadow: -350px 220px 0 -25px rgba(139, 124, 255, 0.30);
+}
+
+
+
+/* =========================
+   COMMENTS SECTION
+========================= */
+
+.comments-section {
+    width: 500px;
+
+    max-width: 90%;
+
+    margin: 50px auto;
+}
+
+
+/* =========================
+   COMMENTS CARD
+========================= */
+
+.comments-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Comments Title */
+
+.comments-card h2 {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Pseudo Element */
+
+.comments-card h2::before {
+    content: "#";
+
+    color: #f0a000;
+
+    margin-right: 5px;
+}
+
+
+/* =========================
+   COMMENTS SCROLL
+========================= */
+
+.comments-list {
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    padding-right: 10px;
+}
+
+
+/* Scrollbar */
+
+.comments-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.comments-list::-webkit-scrollbar-thumb {
+    background: #888;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   COMMENT
+========================= */
+
+.comment {
+    background: #f7f7f7;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    border-radius: 5px;
+}
+
+.comment h3 {
+    color: #b66b20;
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+.comment p {
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   QUOTE CARD
+========================= */
+
+.quote-card {
+    margin-top: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.quote-card h2 {
+    font-size: 14px;
+
+    color: #888;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BLOCKQUOTE
+========================= */
+
+blockquote {
+    position: relative;
+
+    padding: 15px 20px 15px 25px;
+
+    border-left: 3px solid #27c4dc;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* Pseudo Element */
+
+blockquote::before {
+    content: "“";
+
+    position: absolute;
+
+    left: -15px;
+
+    top: -25px;
+
+    font-size: 50px;
+
+    color: #27c4dc;
+}
+
+
+/* =========================
+   CITE
+========================= */
+
+cite {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    font-style: normal;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .comments-section {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        padding: 0 20px;
+    }
+}
